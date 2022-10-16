@@ -1,4 +1,5 @@
 <?php
+error_reporting (E_ALL ^ E_WARNING||E_NOTICE);
 $data = file_get_contents("https://ojk-invest-api.vercel.app/api/illegals");
 $data_ojkinvest=json_decode($data);
 $table = "<h3>OJK INVESTS</h3>";
